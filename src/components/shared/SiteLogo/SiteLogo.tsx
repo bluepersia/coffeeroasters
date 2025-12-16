@@ -3,10 +3,15 @@ import styles from "./site-logo.module.scss";
 
 type Props = {
   mode?: "light" | "dark";
+  variant?: "lg" | "sm";
 };
 
-export default function SiteLogo({ mode = "dark" }: Props) {
-  const classes = clsx(styles.logo, styles[`logo--${mode}`]);
+export default function SiteLogo({ mode = "dark", variant = "lg" }: Props) {
+  const classes = clsx(
+    styles.logo,
+    styles[`logo--${mode}`],
+    styles[`logo--${variant}`]
+  );
 
   return (
     <svg

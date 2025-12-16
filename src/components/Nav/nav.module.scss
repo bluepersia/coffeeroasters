@@ -1,0 +1,25 @@
+@use "/src/App.scss";
+
+.nav {
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--color-neutral-500);
+  transition: color 300ms;
+}
+
+.navLink:hover {
+  color: var(--color-neutral-900);
+}
+
+.navLink:focus {
+  outline: none;
+  border-radius: var(--radius-8);
+  border: solid 0.15rem var(--color-teal-600);
+  padding: 0.2rem 0.4rem;
+}

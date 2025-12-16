@@ -33,3 +33,24 @@
 .mobileNavLink--active {
   text-decoration: underline;
 }
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2.5rem 0;
+  }
+  .nav {
+    display: block;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+}
