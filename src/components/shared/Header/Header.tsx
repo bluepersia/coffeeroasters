@@ -5,7 +5,7 @@ import menuIcon from "/src/assets/MenuBtn.png";
 import closeMenuIcon from "/src/assets/CloseMenuBtn.png";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
-import Nav from "../../Nav/Nav";
+import Nav from "../Nav/Nav";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
