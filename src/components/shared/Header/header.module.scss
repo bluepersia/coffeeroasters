@@ -1,0 +1,35 @@
+@use "/src/App.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-300);
+  padding-bottom: var(--space-400);
+  position: relative;
+}
+
+.menuBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  color: var(--color-neutral-900);
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileNavLink--active {
+  text-decoration: underline;
+}
