@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--color-neutral-900);
+  padding: var(--space-500) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-300);
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: var(--space-250);
+  cursor: pointer;
+}
+
+.socialIcon path {
+  transition: fill 300ms;
+  fill: var(--color-neutral-50);
+}
+
+.socialItem:hover .socialIcon path {
+  fill: var(--color-orange-200);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: var(--space-250);
+    padding-right: var(--space-250);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-left: var(--space-1000);
+    padding-right: var(--space-1000);
+  }
+}

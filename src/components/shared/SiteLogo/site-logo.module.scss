@@ -1,0 +1,19 @@
+@use "/src/App.scss";
+
+.logo {
+  width: 10rem;
+}
+
+.text {
+  fill: var(--color-neutral-900);
+}
+
+.logo--light .text {
+  fill: var(--color-neutral-0);
+}
+
+@media (min-width: 768px) {
+  .logo--lg {
+    width: 14.8rem;
+  }
+}

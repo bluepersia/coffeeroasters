@@ -1,0 +1,32 @@
+@use "/src/App.scss";
+
+.howItWorks {
+  padding: var(--space-1000) 0;
+}
+
+.title {
+  color: var(--color-neutral-500);
+  margin-bottom: var(--space-1000);
+  text-align: center;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: var(--space-500);
+}
+
+@media (min-width: 768px) {
+  .howItWorks {
+    padding: var(--space-1800) 0;
+  }
+  .title {
+    margin-bottom: var(--space-1000);
+    text-align: left;
+  }
+  .button {
+    margin-top: var(--space-800);
+    margin-left: 0;
+  }
+}

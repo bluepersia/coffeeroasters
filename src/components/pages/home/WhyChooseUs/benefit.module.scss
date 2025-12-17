@@ -1,0 +1,35 @@
+.benefit {
+  background-color: var(--color-teal-600);
+  border-radius: var(--radius-10);
+  padding: var(--space-300) var(--space-250);
+  max-width: 35rem;
+}
+
+.img {
+  margin-bottom: var(--space-300);
+}
+
+.title {
+  margin-bottom: var(--space-150);
+}
+
+@media (min-width: 768px) {
+  .benefit {
+    display: flex;
+    align-items: center;
+    padding: var(--space-500) var(--space-600);
+    text-align: left;
+    gap: var(--space-600);
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefit {
+    display: block;
+    text-align: center;
+  }
+
+  .img {
+    margin-bottom: var(--space-600);
+  }
+}

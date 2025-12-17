@@ -1,0 +1,21 @@
+@use "/src/App.scss";
+
+.button {
+  background-color: var(--color-teal-600);
+  color: var(--color-neutral-50);
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-6);
+  transition: background-color 300ms;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: var(--color-teal-300);
+}
+
+.button:disabled {
+  background-color: var(--color-neutral-200);
+}

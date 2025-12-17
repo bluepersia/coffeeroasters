@@ -1,0 +1,60 @@
+.whyChooseUs {
+  color: var(--color-neutral-50);
+  text-align: center;
+}
+
+.content {
+  padding-top: var(--space-1200);
+  background-color: var(--color-neutral-900);
+  padding-bottom: 14rem;
+  border-radius: var(--radius-10);
+}
+.title,
+.desc {
+  width: min(90%, 33rem);
+}
+
+.title {
+  margin-bottom: var(--space-400);
+}
+
+.desc {
+  margin-bottom: 4rem;
+}
+
+.benefits {
+  width: min(80%, 69rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+  margin-top: -14rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-bottom: 18rem;
+  }
+  .title,
+  .desc {
+    width: min(76%, 33rem);
+  }
+
+  .title {
+    margin-bottom: 1.25rem;
+  }
+
+  .benefits {
+    margin-top: -17rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding-top: var(--space-1200);
+    padding-bottom: 15rem;
+  }
+  .benefits {
+    flex-direction: row;
+    margin-top: -15rem;
+  }
+}
