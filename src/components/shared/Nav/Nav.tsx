@@ -4,13 +4,15 @@ import clsx from "clsx";
 
 type Props = {
   className?: string;
+  mode?: string;
 };
-export default function Nav({ className }: Props) {
+export default function Nav({ className, mode = "dark" }: Props) {
   function activeNavLink({ isActive }: { isActive: boolean }) {
     return clsx(
       styles.navLink,
       "u-reset-link",
       "text-8",
+      styles[`navLink--${mode}`],
       isActive ? styles["navLink--active"] : ""
     );
   }

@@ -10,8 +10,11 @@
   transition: color 300ms;
 }
 
-.navLink:hover {
+.navLink:hover.navLink--dark {
   color: var(--color-neutral-900);
+}
+.navLink:hover.navLink--light {
+  color: var(--color-neutral-0);
 }
 
 .navLink:focus {
