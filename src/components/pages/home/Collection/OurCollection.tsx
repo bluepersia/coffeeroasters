@@ -16,16 +16,20 @@ export default function OurCollection() {
       <h2 className={styles.title}>Our Collection</h2>
       <ul className={clsx(styles.list, "u-reset-list")}>
         {collection.map((item) => (
-          <li className={styles.item}>
-            <img
-              src={`/src/assets/${item.img}`}
-              alt=""
-              className={styles.itemImg}
-            />
-            <div className={styles.content}>
-              <h3 className={clsx(styles.itemTitle, "text-4")}>{item.title}</h3>
-              <p className={clsx(styles.itemDesc, "text-6")}>{item.desc}</p>
-            </div>
+          <li>
+            <article className={styles.item}>
+              <img
+                src={`/src/assets/${item.img}`}
+                alt=""
+                className={styles.itemImg}
+              />
+              <div className={styles.content}>
+                <h3 className={clsx(styles.itemTitle, "text-4")}>
+                  {item.title}
+                </h3>
+                <p className={clsx(styles.itemDesc, "text-6")}>{item.desc}</p>
+              </div>
+            </article>
           </li>
         ))}
       </ul>
