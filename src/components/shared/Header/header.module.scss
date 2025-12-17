@@ -7,6 +7,7 @@
   padding-top: var(--space-300);
   padding-bottom: var(--space-400);
   position: relative;
+  z-index: 99;
 }
 
 .menuBtn {
@@ -16,6 +17,8 @@
 }
 
 .mobileNav {
+  background-color: var(--color-neutral-0);
+  z-index: 99;
   position: absolute;
   top: 100%;
   left: 0px;
