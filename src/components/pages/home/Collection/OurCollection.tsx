@@ -21,7 +21,7 @@ export default function OurCollection() {
               <img
                 src={`/src/assets/${item.img}`}
                 alt=""
-                className={styles.itemImg}
+                className={clsx(styles.itemImg, "u-margin-center")}
               />
               <div className={styles.content}>
                 <h3 className={clsx(styles.itemTitle, "text-4")}>

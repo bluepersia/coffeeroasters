@@ -53,9 +53,13 @@
 
 /*UTILITIES*/
 
-.u-container {
-  width: min(91%, 79.375rem);
+.u-margin-center {
   margin: 0 auto;
+}
+
+.u-container {
+  @extend .u-margin-center;
+  width: min(91%, 79.375rem);
 }
 
 .u-reset-link {
