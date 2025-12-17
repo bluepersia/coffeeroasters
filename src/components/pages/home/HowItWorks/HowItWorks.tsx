@@ -1,10 +1,12 @@
+import clsx from "clsx";
 import Steps from "../../../shared/Steps/Steps";
 import styles from "./how-it-works.module.scss";
+import Button from "../../../shared/Button/Button";
 
 export default function HowItWorks() {
   return (
     <section className={styles.howItWorks}>
-      <h2 className={styles.title}>How it works</h2>
+      <h2 className={clsx(styles.title, "text-4")}>How it works</h2>
       <Steps
         steps={[
           {
@@ -21,6 +23,9 @@ export default function HowItWorks() {
           },
         ]}
       />
+      <Button to="/create-plan" className={styles.button}>
+        Create your plan
+      </Button>
     </section>
   );
 }

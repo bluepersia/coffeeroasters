@@ -1,0 +1,76 @@
+@use "/src/App.scss";
+
+.line {
+  height: 1px;
+  width: 66%;
+  background-color: var(--color-orange-200);
+  position: relative;
+  margin-bottom: var(--space-1000);
+  display: none;
+}
+
+@mixin circle-base {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 2px var(--color-teal-600);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: var(--color-neutral-0);
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  @include circle-base();
+}
+
+.circle2 {
+  left: 50%;
+}
+
+.circle3 {
+  left: 100%;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-500);
+  text-align: center;
+}
+
+.stepNum {
+  color: var(--color-orange-200);
+  margin-bottom: var(--space-300);
+  display: block;
+}
+
+.stepTitle {
+  margin-bottom: var(--space-300);
+  color: var(--color-neutral-900);
+}
+
+.stepDesc {
+  color: var(--color-neutral-900);
+}
+
+@media (min-width: 768px) {
+  .line {
+    display: block;
+  }
+  .list {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--space-250);
+  }
+
+  .step {
+    width: 100%;
+    flex-basis: 33%;
+  }
+
+  .stepNum,
+  .stepTitle {
+    margin-bottom: var(--space-500);
+  }
+}
