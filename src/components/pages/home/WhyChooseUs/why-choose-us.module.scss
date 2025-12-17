@@ -1,11 +1,13 @@
 .whyChooseUs {
-  padding-top: var(--space-1200);
-  padding-bottom: 14rem;
-  background-color: var(--color-neutral-900);
   color: var(--color-neutral-50);
   text-align: center;
+}
+
+.content {
+  padding-top: var(--space-1200);
+  background-color: var(--color-neutral-900);
+  padding-bottom: 14rem;
   border-radius: var(--radius-10);
-  position: relative;
 }
 .title,
 .desc {
@@ -22,16 +24,14 @@
 
 .benefits {
   width: min(80%, 69rem);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   gap: var(--space-300);
+  margin-top: -14rem;
 }
 
 @media (min-width: 768px) {
-  .whyChooseUs {
+  .content {
     padding-bottom: 18rem;
   }
   .title,
@@ -42,14 +42,19 @@
   .title {
     margin-bottom: 1.25rem;
   }
+
+  .benefits {
+    margin-top: -17rem;
+  }
 }
 
 @media (min-width: 1200px) {
-  .whyChooseUs {
+  .content {
     padding-top: var(--space-1200);
     padding-bottom: 15rem;
   }
   .benefits {
     flex-direction: row;
+    margin-top: -15rem;
   }
 }
