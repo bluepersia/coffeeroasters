@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Gran Espresso",
+    "desc": "Light and flavorful blend with cocoa and black pepper for an intense experience.",
+    "img": "GranEspresso.png"
+  },
+  {
+    "title": "Planalto",
+    "desc": "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.",
+    "img": "Planalto.png"
+  },
+  {
+    "title": "Piccollo",
+    "desc": "Mild and smooth blend featuring notes of toasted almond and dried cherry.",
+    "img": "Piccollo.png"
+  },
+  {
+    "title": "Danche",
+    "desc": "Ethiopian hand-harvested blend densely packed with vibrant fruit notes.",
+    "img": "Danche.png"
+  }
+]

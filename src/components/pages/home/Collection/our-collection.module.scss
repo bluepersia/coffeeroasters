@@ -1,0 +1,80 @@
+@use "/src/App.scss";
+
+.ourCollection {
+  padding: var(--space-1000) 0;
+  text-align: center;
+}
+
+.title {
+  @include App.fraunces-base;
+  font-size: 2.5rem;
+  background: linear-gradient(
+    180deg,
+    var(--color-neutral-500),
+    var(--color-neutral-50)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-400);
+}
+.item {
+  max-width: 15.8rem;
+}
+
+.itemImg {
+  display: block;
+  width: 15.8rem;
+  margin: 0 auto;
+  margin-bottom: var(--space-300);
+}
+
+.itemTitle {
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-200);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 7rem;
+    margin-bottom: -5rem;
+  }
+  .list {
+    gap: var(--space-300);
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    max-width: 44rem;
+    gap: var(--space-400);
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ourCollection {
+    padding: var(--space-1800) 0;
+  }
+
+  .title {
+    font-size: 11.3erm;
+    margin-bottom: -4rem;
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex-direction: column;
+    text-align: center;
+    max-width: 15.8rem;
+  }
+}

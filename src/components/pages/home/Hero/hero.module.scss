@@ -16,6 +16,10 @@
   max-width: 26.25rem;
 }
 
+.title {
+  margin-bottom: var(--space-400);
+}
+
 .desc {
   margin-bottom: var(--space-500);
 }
@@ -26,6 +30,10 @@
     padding: var(--space-1200) var(--space-600);
     text-align: left;
     background-color: transparent;
+  }
+
+  .desc {
+    margin-bottom: var(--space-600);
   }
 }
 
