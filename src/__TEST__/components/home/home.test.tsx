@@ -32,5 +32,9 @@ describe("Home", () => {
         .getByRole("heading", { level: 2, name: /why choose us/i })
         .closest("section")
     ).toBeVisible();
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: /how it works/i })
+    ).toBeVisible();
   });
 });
