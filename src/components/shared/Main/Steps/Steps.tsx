@@ -1,14 +1,16 @@
+import clsx from "clsx";
 import Step from "./Step";
+import styles from "./steps.module.css";
 
 export default function Steps() {
   return (
-    <div>
+    <div className={styles.steps}>
       <div>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <ul>
+      <ol className={clsx(styles.list, "u-reset-list")}>
         <Step
           num={1}
           title="Pick your coffee"
@@ -24,7 +26,7 @@ export default function Steps() {
           title="Receive and enjoy!"
           desc="We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
         />
-      </ul>
+      </ol>
     </div>
   );
 }

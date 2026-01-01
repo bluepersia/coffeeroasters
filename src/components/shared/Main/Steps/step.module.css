@@ -1,0 +1,14 @@
+.num {
+  color: var(--color-orange-200);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: var(--color-neutral-900);
+}
+
+.desc {
+  color: var(--color-neutral-900);
+}

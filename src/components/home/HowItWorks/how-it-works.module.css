@@ -1,0 +1,12 @@
+.howItWorks {
+  padding: 3.75rem 0;
+}
+
+.title {
+  color: var(--color-neutral-500);
+  margin-bottom: 4rem;
+}
+
+.btn {
+  margin-top: 2.5rem;
+}
