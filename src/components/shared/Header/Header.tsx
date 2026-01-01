@@ -2,11 +2,12 @@ import MainNav from "../Nav/MainNav";
 import SiteLogo from "../SiteLogo/SiteLogo";
 import openNavMenuIcon from "../../../assets/shared/openNavMenu.png";
 import closeNavMenuIcon from "../../../assets/shared/closeNavMenu.png";
+import styles from "./header.module.css";
 
 export default function Header() {
   const isOpen = false;
   return (
-    <header>
+    <header className={styles.header}>
       <SiteLogo />
       <MainNav variant="header" />
       <button
