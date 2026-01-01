@@ -16,21 +16,18 @@ describe("Home", () => {
     );
 
     expect(
-      screen
-        .getByRole("heading", { level: 1, name: /great coffee made simple/i })
-        .closest("section")
+      screen.getByRole("heading", {
+        level: 1,
+        name: /great coffee made simple/i,
+      })
     ).toBeVisible();
 
     expect(
-      screen
-        .getByRole("heading", { level: 2, name: /our collection/i })
-        .closest("section")
+      screen.getByRole("heading", { level: 2, name: /our collection/i })
     ).toBeVisible();
 
     expect(
-      screen
-        .getByRole("heading", { level: 2, name: /why choose us/i })
-        .closest("section")
+      screen.getByRole("heading", { level: 2, name: /why choose us/i })
     ).toBeVisible();
 
     expect(
