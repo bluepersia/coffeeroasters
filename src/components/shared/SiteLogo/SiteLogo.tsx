@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import styles from "./site-logo.module.css";
 
 export default function SiteLogo() {
   return (
     <Link to="/" aria-label="Go to home">
       <svg
+        className={styles.logo}
         width="237"
         height="24"
         viewBox="0 0 237 24"
