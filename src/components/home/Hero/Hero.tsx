@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={clsx(styles.hero, "radius-10")}>
       <h1 className={clsx(styles.title, "text-1")}>
         Great coffee made simple.
       </h1>
@@ -20,7 +20,7 @@ export default function Hero() {
       <img
         src={mainImg}
         alt="Shimmering golden coffee pot and beans"
-        className={styles.img}
+        className={clsx(styles.img, "radius-10")}
       />
     </section>
   );

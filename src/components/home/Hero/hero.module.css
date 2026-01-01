@@ -3,8 +3,14 @@
   background-color: rgba(0, 0, 0, 60%);
   color: var(--color-neutral-50);
   text-align: center;
+  padding: 6rem 1.5rem;
 }
-
+.title {
+  margin-bottom: 2rem;
+}
+.desc {
+  margin-bottom: 2.5rem;
+}
 .img {
   position: absolute;
   left: 0;
