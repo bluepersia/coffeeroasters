@@ -1,4 +1,6 @@
 import "./App.css";
+import "./styles/utilities.css";
+import "./styles/design-system.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/shared/Layout/Layout";
 

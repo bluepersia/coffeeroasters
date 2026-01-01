@@ -4,8 +4,10 @@ import Header from "../Header/Header";
 export default function Layout() {
   return (
     <div data-testid="layout">
-      <Header />
-      <Outlet />
+      <div className="u-container">
+        <Header />
+        <Outlet />
+      </div>
     </div>
   );
 }
