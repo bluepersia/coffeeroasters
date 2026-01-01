@@ -1,0 +1,14 @@
+.item {
+  color: var(--color-neutral-900);
+}
+
+.img {
+  width: 14.68rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
