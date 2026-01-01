@@ -1,0 +1,32 @@
+.howItWorks {
+  padding: 3.75rem 0;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-neutral-500);
+  margin-bottom: 4rem;
+}
+
+.btn {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .howItWorks {
+    text-align: left;
+  }
+  .title {
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .howItWorks {
+    padding: 8.75rem 0;
+  }
+}
