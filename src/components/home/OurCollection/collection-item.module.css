@@ -12,3 +12,33 @@
 .name {
   margin-bottom: 1rem;
 }
+
+.content {
+  margin: 0 auto;
+  max-width: 343px;
+}
+@media (min-width: 768px) {
+  .item {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 44rem;
+  }
+  .img {
+    margin: 0;
+  }
+
+  .content {
+    max-width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

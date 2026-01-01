@@ -10,8 +10,10 @@ export default function CollectionItem(props: Props) {
         alt={`Bag of ${props.name}`}
         className={styles.img}
       />
-      <h3 className={clsx(styles.name, "text-4")}>{props.name}</h3>
-      <p className={clsx(styles.desc, "text-6")}>{props.desc}</p>
+      <div className={styles.content}>
+        <h3 className={clsx(styles.name, "text-4")}>{props.name}</h3>
+        <p className={clsx(styles.desc, "text-6")}>{props.desc}</p>
+      </div>
     </article>
   );
 }

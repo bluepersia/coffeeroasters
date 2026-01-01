@@ -17,11 +17,22 @@
 .inner {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-bottom: -4rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .collection {
     padding: 8.75rem 0;
+  }
+
+  .inner {
+    flex-direction: row;
   }
 }
