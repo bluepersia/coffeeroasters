@@ -5,6 +5,9 @@
   text-align: center;
   padding: 6rem 1.5rem;
 }
+.content {
+  max-width: 26.25rem;
+}
 .title {
   margin-bottom: 2rem;
 }
@@ -19,4 +22,16 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: none;
+    text-align: left;
+    padding: 6rem 3rem;
+  }
+
+  .desc {
+    margin-bottom: 3rem;
+  }
 }
