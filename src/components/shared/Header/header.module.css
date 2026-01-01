@@ -4,12 +4,14 @@
   justify-content: space-between;
   height: 4.5rem;
   padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .header {
     height: 6.5rem;
     padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .menuBtn {
