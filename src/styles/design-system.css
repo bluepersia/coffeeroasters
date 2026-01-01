@@ -158,4 +158,5 @@
   color: var(--color-neutral-50);
   background-color: var(--color-teal-600);
   padding: 1rem 2rem;
+  border: none;
 }
