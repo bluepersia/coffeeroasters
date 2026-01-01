@@ -13,7 +13,9 @@ describe("Collection item", () => {
   it("should render correctly", () => {
     render(<CollectionItem {...mockItem} />);
 
-    expect(screen.getByRole("heading", { name: mockItem.name })).toBeVisible();
+    expect(
+      screen.getByRole("heading", { name: mockItem.name, level: 3 })
+    ).toBeVisible();
     expect(screen.getByText(mockItem.desc)).toBeVisible();
     expect(screen.getByAltText(`Bag of ${mockItem.name}`)).toBeVisible();
   });

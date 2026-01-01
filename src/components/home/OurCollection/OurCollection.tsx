@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import getOurCollection from "./services";
+import { getOurCollection } from "./services";
 import CollectionItem from "./CollectionItem";
 
 export default function OurCollection() {
