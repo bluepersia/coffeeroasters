@@ -1,16 +1,14 @@
-import type { NavItem } from "../../../../components/shared/Nav/types";
-
-export const NAV_LINKS: NavItem[] = [
+export const NAV_LINKS = [
   {
-    text: "Home",
-    to: "/",
+    name: "Home",
+    href: "/",
   },
   {
-    text: "About Us",
-    to: "/about-us",
+    name: "About Us",
+    href: "/about-us",
   },
   {
-    text: "Create Your Plan",
-    to: "/create-plan",
+    name: "Create Your Plan",
+    href: "/create-plan",
   },
 ];

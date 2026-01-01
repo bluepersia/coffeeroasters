@@ -13,7 +13,7 @@ export function navTests(name: string, node: React.ReactNode) {
 
       nav = screen.getByRole("navigation");
       links = NAV_LINKS.map((item) =>
-        screen.getByRole("link", { name: item.text })
+        screen.getByRole("link", { name: item.name })
       );
     });
 
@@ -27,7 +27,7 @@ export function navTests(name: string, node: React.ReactNode) {
 
     it("should link to the correct pages", () => {
       for (const [index, link] of links.entries()) {
-        expect(link).toHaveAttribute("href", NAV_LINKS[index].to);
+        expect(link).toHaveAttribute("href", NAV_LINKS[index].href);
       }
     });
   });
