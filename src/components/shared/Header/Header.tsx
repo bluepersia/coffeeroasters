@@ -3,6 +3,7 @@ import SiteLogo from "../SiteLogo/SiteLogo";
 import openNavMenuIcon from "../../../assets/shared/openNavMenu.png";
 import closeNavMenuIcon from "../../../assets/shared/closeNavMenu.png";
 import styles from "./header.module.css";
+import clsx from "clsx";
 
 export default function Header() {
   const isOpen = false;
@@ -12,6 +13,7 @@ export default function Header() {
       <MainNav variant="header" />
       <button
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        className={clsx(styles.menuBtn, "u-reset-button")}
       >
         <img src={isOpen ? closeNavMenuIcon : openNavMenuIcon} />
       </button>

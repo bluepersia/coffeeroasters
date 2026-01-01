@@ -11,4 +11,8 @@
     height: 6.5rem;
     padding-top: 2.5rem;
   }
+
+  .menuBtn {
+    display: none;
+  }
 }

@@ -14,3 +14,9 @@
   color: inherit;
   font-family: inherit;
 }
+
+.u-reset-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
