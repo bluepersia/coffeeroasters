@@ -35,3 +35,11 @@
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 7rem 5rem;
+  }
+  .content {
+    max-width: 30.81rem;
+  }
+}
