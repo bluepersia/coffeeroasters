@@ -1,0 +1,21 @@
+.collection {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.title {
+  text-transform: lowercase;
+  background: linear-gradient(
+    180deg,
+    var(--color-neutral-900),
+    var(--color-neutral-50)
+  ); /* Your gradient */
+  background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent */
+}
+
+@media (min-width: 1200px) {
+  .collection {
+    padding: 8.75rem 0;
+  }
+}
