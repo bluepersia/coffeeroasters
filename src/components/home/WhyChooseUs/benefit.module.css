@@ -1,0 +1,35 @@
+.benefit {
+  background-color: var(--color-teal-600);
+  text-align: center;
+  color: var(--color-neutral-50);
+  padding: 1.5rem 1.25rem;
+}
+
+.icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .benefit {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 2.5rem 3rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefit {
+    display: block;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+}
