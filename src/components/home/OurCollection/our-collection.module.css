@@ -22,6 +22,9 @@
 }
 
 @media (min-width: 768px) {
+  .inner {
+    margin-left: -7rem;
+  }
   .title {
     margin-bottom: -4rem;
   }
@@ -34,5 +37,6 @@
 
   .inner {
     flex-direction: row;
+    margin-left: 0;
   }
 }
