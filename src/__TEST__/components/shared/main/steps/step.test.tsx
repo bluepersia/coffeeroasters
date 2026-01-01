@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import Step from "../../../../components/shared/Steps/Step";
+import Step from "../../../../../components/shared/Main/Steps/Step";
 
 const mockStep = {
   num: 1,

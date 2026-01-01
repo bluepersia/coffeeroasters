@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import Steps from "../../../../components/shared/Steps/Steps";
+import Steps from "../../../../../components/shared/Main/Steps/Steps";
 
 describe("Steps", () => {
   it("should render correctly", () => {
