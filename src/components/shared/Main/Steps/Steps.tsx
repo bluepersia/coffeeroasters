@@ -5,10 +5,10 @@ import styles from "./steps.module.css";
 export default function Steps() {
   return (
     <div className={styles.steps}>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className={styles.line}>
+        <div className={clsx(styles.circle, styles.circle1)}></div>
+        <div className={clsx(styles.circle, styles.circle2)}></div>
+        <div className={clsx(styles.circle, styles.circle3)}></div>
       </div>
       <ol className={clsx(styles.list, "u-reset-list")}>
         <Step
