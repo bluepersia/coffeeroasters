@@ -3,3 +3,14 @@
   margin: 0 auto;
   max-width: 79.375rem;
 }
+
+.u-reset-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.u-reset-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}

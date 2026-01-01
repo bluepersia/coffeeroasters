@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <SiteLogo />
-      <MainNav />
+      <MainNav variant="header" />
       <button
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
       >

@@ -5,5 +5,5 @@ import MainNav from "../../../../components/shared/Nav/MainNav";
 
 describe("Nav", () => {
   navTests("Base", <NavBase />);
-  navTests("Main", <MainNav />);
+  navTests("Main", <MainNav variant="header" />);
 });
