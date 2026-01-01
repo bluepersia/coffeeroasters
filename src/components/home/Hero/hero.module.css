@@ -13,6 +13,7 @@
 }
 .desc {
   margin-bottom: 2.5rem;
+  opacity: 80%;
 }
 .img {
   position: absolute;
