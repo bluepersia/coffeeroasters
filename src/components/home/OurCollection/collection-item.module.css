@@ -24,7 +24,6 @@
     align-items: center;
     gap: 2rem;
     justify-content: center;
-    max-width: 44rem;
   }
   .img {
     margin: 0;
@@ -40,5 +39,8 @@
   .item {
     flex-direction: column;
     text-align: center;
+    flex-basis: 20%;
+    flex-grow: 1;
+    max-width: 253px;
   }
 }
