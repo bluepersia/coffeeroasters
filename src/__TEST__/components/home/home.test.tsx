@@ -2,18 +2,34 @@ import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import Home from "../../../components/home/Home";
 import { MemoryRouter } from "react-router-dom";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "../../react-query";
 
 describe("Home", () => {
   it("should render correctly", () => {
     render(
       <MemoryRouter>
-        <Home />
+        <QueryClientProvider client={queryClient}>
+          <Home />
+        </QueryClientProvider>
       </MemoryRouter>
     );
 
     expect(
       screen
         .getByRole("heading", { level: 1, name: /great coffee made simple/i })
+        .closest("section")
+    ).toBeVisible();
+
+    expect(
+      screen
+        .getByRole("heading", { level: 2, name: /our collection/i })
+        .closest("section")
+    ).toBeVisible();
+
+    expect(
+      screen
+        .getByRole("heading", { level: 2, name: /why choose us/i })
         .closest("section")
     ).toBeVisible();
   });
