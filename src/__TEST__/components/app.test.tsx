@@ -6,11 +6,15 @@ import App from "../../App";
 describe("App", () => {
   it("renders correctly", () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter initialEntries={["/"]}>
         <App />
       </MemoryRouter>
     );
 
     expect(screen.getByTestId("layout")).toBeVisible();
+
+    expect(
+      screen.getByRole("main", { name: /home main content/i })
+    ).toBeVisible();
   });
 });
