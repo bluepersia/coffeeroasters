@@ -1,0 +1,28 @@
+.nav--header {
+  display: none;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.link {
+  color: var(--color-neutral-500);
+  transition: color 300ms;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--color-neutral-900);
+}
+
+.link:focus-visible {
+  outline: solid 2px var(--color-teal-600);
+}
+
+@media (min-width: 768px) {
+  .nav--header {
+    display: block;
+  }
+}

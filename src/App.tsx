@@ -1,8 +1,15 @@
 import "./App.css";
-import { Routes } from "react-router-dom";
+import "./styles/utilities.css";
+import "./styles/design-system.css";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/shared/Layout/Layout";
 
 function App() {
-  return <Routes></Routes>;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}></Route>
+    </Routes>
+  );
 }
 
 export default App;
