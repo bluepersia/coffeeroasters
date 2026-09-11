@@ -1,0 +1,8 @@
+.menuBtn {
+  transition: opacity 300ms;
+}
+
+.menuBtn:hover,
+.menuBtn:focus {
+  opacity: 0.7;
+}

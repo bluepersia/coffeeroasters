@@ -1,0 +1,34 @@
+@use "/src/css/variables" as *;
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-300) 0 var(--space-400);
+}
+
+.logo svg {
+  width: 160px;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: $bp-tablet) {
+  .inner {
+    padding: var(--space-500) 0;
+  }
+
+  .logo svg {
+    width: 237px;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+}
