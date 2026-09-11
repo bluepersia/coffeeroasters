@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import type { JSX } from "react/jsx-runtime";
 import styles from "./Nav.module.scss";
 import clsx from "clsx";
+import { CREATE_YOUR_PLAN_LINK } from "../../core/linkCreation";
 
 type NavProps = {
   className?: string;
@@ -21,7 +22,10 @@ export default function Nav({ className }: NavProps): JSX.Element {
           </Link>
         </li>
         <li>
-          <Link to="create-your-plan" className={clsx(styles.link, "text8")}>
+          <Link
+            to={CREATE_YOUR_PLAN_LINK}
+            className={clsx(styles.link, "text8")}
+          >
             Create Your Plan
           </Link>
         </li>
