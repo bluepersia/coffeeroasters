@@ -1,0 +1,73 @@
+@use "./variables" as *;
+
+@mixin heading {
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+}
+
+@mixin text-1 {
+  @include heading;
+
+  line-height: 1;
+  font-size: clamp(2.5rem, 2.0229rem + 2.0356vw, 3rem);
+
+  @media (min-width: $bp-tablet) {
+    font-size: clamp(3rem, 0.3333rem + 5.5556vw, 4.5rem);
+  }
+}
+
+@mixin text-2 {
+  @include heading;
+
+  line-height: 1.2;
+  font-size: clamp(1.75rem, 1.5115rem + 1.0178vw, 2rem);
+
+  @media (min-width: $bp-tablet) {
+    font-size: clamp(2rem, 1.1111rem + 1.8519vw, 2.5rem);
+  }
+}
+
+@mixin text-3 {
+  @include heading;
+
+  line-height: 1.14;
+  font-size: 2rem;
+}
+
+@mixin text-4 {
+  @include heading;
+
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+@mixin text-5 {
+  @include heading;
+
+  line-height: 1.4;
+  font-size: 1.125rem;
+}
+
+@mixin text-6 {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@mixin text-7 {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@mixin text-8 {
+  font-family: var(--font-fraunces);
+  font-weight: bold;
+  line-height: 1.3;
+  font-size: 0.75rem;
+  letter-spacing: 0.076em;
+  text-transform: uppercase;
+}

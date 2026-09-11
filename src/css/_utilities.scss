@@ -1,0 +1,71 @@
+@use "./variables" as *;
+@use "./mixins";
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.resetList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  width: 91.46%;
+  margin: 0 auto;
+  max-width: 1280px;
+
+  @media (min-width: $bp-tablet) {
+    width: 91.66%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 88.88%;
+  }
+}
+
+.innerContainer {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.text1 {
+  @include mixins.text-1;
+}
+
+.text2 {
+  @include mixins.text-2;
+}
+
+.text3 {
+  @include mixins.text-3;
+}
+
+.text4 {
+  @include mixins.text-4;
+}
+
+.text5 {
+  @include mixins.text-5;
+}
+
+.text6 {
+  @include mixins.text-6;
+}
+
+.text7 {
+  @include mixins.text-7;
+}
+
+.text8 {
+  @include mixins.text-8;
+}
