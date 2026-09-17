@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  column-gap: var(--space-400);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-neutral-500);
+  transition: color 300ms;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-neutral-900);
+}
+
+.link:focus {
+  outline: none;
+  border: solid 2px var(--color-teal-600);
+  padding: var(--space-050);
+  border-radius: var(--radius-8);
+}
