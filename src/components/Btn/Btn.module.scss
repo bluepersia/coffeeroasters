@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  width: fit-content;
+  background-color: var(--color-teal-600);
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
+  padding: 1em 2em;
+  border-radius: var(--radius-6);
+  text-decoration: none;
+  color: var(--color-neutral-50);
+  transition: background-color 300ms;
+}
+
+.btn:hover {
+  background-color: var(--color-teal-300);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--color-neutral-0),
+    0 0 0 5px var(--color-teal-600);
+}

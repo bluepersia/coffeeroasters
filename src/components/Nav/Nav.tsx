@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { Link } from "react-router";
 import type { JSX } from "react/jsx-runtime";
 import styles from "./Nav.module.scss";
+import { CREATE_PLAN_LINK } from "../../core/linkCreation";
 
 const LINKS = [
   {
@@ -14,7 +15,7 @@ const LINKS = [
   },
   {
     label: "Create Your Plan",
-    to: "/create-plan",
+    to: CREATE_PLAN_LINK,
   },
 ];
 
