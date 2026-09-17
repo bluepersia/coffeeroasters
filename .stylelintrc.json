@@ -1,0 +1,32 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-declaration-strict-value"],
+  "rules": {
+    "selector-class-pattern": "^(?:[a-zA-Z0-9]|--)+$",
+    "scale-unlimited/declaration-strict-value": [
+      [
+        "/color/",
+        "/background-color/",
+        "font-family",
+        "/margin/",
+        "/padding/",
+        "gap",
+        "row-gap",
+        "column-gap",
+        "/border-radius/"
+      ],
+      {
+        "ignoreValues": [
+          "0",
+          "none",
+          "transparent",
+          "inherit",
+          "auto",
+          "currentColor"
+        ],
+        "disableFix": false,
+        "severity": "error"
+      }
+    ]
+  }
+}
