@@ -1,0 +1,53 @@
+@use "/src/css/variables" as *;
+
+.featureCard {
+  background-color: var(--color-teal-600);
+  border-radius: var(--radius-8);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: var(--space-300) var(--space-250);
+  color: var(--color-neutral-50);
+}
+
+.img {
+  width: 60px;
+  margin-bottom: var(--space-300);
+}
+
+.title {
+  margin-bottom: var(--space-150);
+}
+
+@media (min-width: $bp-tablet) {
+  .featureCard {
+    flex-direction: row-reverse;
+    text-align: left;
+    column-gap: var(--space-600);
+    padding: var(--space-500) var(--space-600);
+  }
+
+  .img {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: var(--space-250);
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .featureCard {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .img {
+    width: 72px;
+    margin-bottom: var(--space-600);
+  }
+
+  .title {
+    margin-bottom: var(--space-300);
+  }
+}
