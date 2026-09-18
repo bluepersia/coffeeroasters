@@ -1,0 +1,48 @@
+@use "/src/css/variables" as *;
+
+.coffeeCard {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: var(--color-neutral-900);
+}
+
+.img {
+  width: 235px;
+  margin-bottom: var(--space-300);
+}
+
+.title {
+  margin-bottom: var(--space-200);
+}
+
+@media (min-width: $bp-tablet) {
+  .coffeeCard {
+    text-align: left;
+    flex-direction: row-reverse;
+    column-gap: var(--space-400);
+  }
+
+  .content {
+    max-width: 300px;
+  }
+
+  .img {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: var(--space-300);
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .coffeeCard {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    margin-bottom: var(--space-600);
+  }
+}

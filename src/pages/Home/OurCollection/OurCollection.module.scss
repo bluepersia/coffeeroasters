@@ -1,0 +1,53 @@
+@use "/src/css/variables" as *;
+
+.ourCollection {
+  text-align: center;
+}
+
+.inner {
+  padding: var(--space-1000) 0;
+}
+
+.title {
+  font-size: clamp(2.5rem, -1.7939rem + 18.3206vw, 7rem);
+  background: linear-gradient(
+    0deg,
+    var(--color-neutral-50),
+    var(--color-neutral-500)
+  );
+  text-transform: lowercase;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: var(--space-100);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--space-400);
+}
+
+@media (min-width: $bp-tablet) {
+  .title {
+    font-size: clamp(7rem, -0.7778rem + 16.2037vw, 11.375rem);
+    margin-bottom: 0;
+  }
+
+  .list {
+    padding-left: var(--space-200);
+    margin-top: calc(-1 * var(--space-800));
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .list {
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex-basis: 22.8%;
+  }
+}
