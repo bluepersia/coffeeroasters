@@ -1,6 +1,12 @@
+@use "/src/css/variables" as *;
+
 .list {
   display: flex;
   column-gap: var(--space-400);
+}
+
+.nav--tight .list {
+  column-gap: var(--space-250);
 }
 
 .link {
@@ -19,4 +25,21 @@
   border: solid 2px var(--color-teal-600);
   padding: var(--space-050);
   border-radius: var(--radius-8);
+}
+
+.nav--light .link:hover,
+.nav--light .link:focus {
+  color: var(--color-neutral-0);
+}
+
+@media (width <= 320px) {
+  .nav--tight .list {
+    column-gap: var(--space-100);
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .nav--tight .list {
+    column-gap: var(--space-400);
+  }
 }
