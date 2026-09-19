@@ -1,0 +1,41 @@
+@use "/src/css/variables" as *;
+
+.footer {
+  background-color: var(--color-neutral-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-500) var(--space-250);
+  margin-bottom: var(--space-300);
+}
+
+.logo,
+.nav {
+  margin-bottom: var(--space-300);
+}
+
+.logo svg {
+  width: 160px;
+}
+
+@media (min-width: $bp-tablet) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo,
+  .nav {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .footer {
+    padding: var(--space-600) var(--space-1000);
+  }
+
+  .logo svg {
+    width: 237px;
+  }
+}

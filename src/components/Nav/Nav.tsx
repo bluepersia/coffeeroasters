@@ -20,11 +20,24 @@ const LINKS = [
 ];
 
 type NavProps = {
+  color?: "dark" | "light";
+  gap?: "normal" | "tight";
   className?: string;
 };
-export default function Nav({ className }: NavProps): JSX.Element {
+export default function Nav({
+  color = "dark",
+  gap = "normal",
+  className,
+}: NavProps): JSX.Element {
   return (
-    <nav className={clsx(styles.nav, className)}>
+    <nav
+      className={clsx(
+        styles.nav,
+        styles[`nav--${color}`],
+        styles[`nav--${gap}`],
+        className,
+      )}
+    >
       <ul className={clsx(styles.list, "resetList")}>
         {LINKS.map((LINK) => (
           <li key={LINK.label} className={styles.item}>
