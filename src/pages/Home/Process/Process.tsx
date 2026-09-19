@@ -31,7 +31,7 @@ const STEP_ITEMS: StepItemData[] = [
     description:
       "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.",
   },
-];
+] as const;
 
 type ProcessProps = {
   showTitle?: boolean;

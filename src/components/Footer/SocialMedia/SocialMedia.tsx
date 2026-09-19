@@ -45,7 +45,7 @@ const SOCIAL_MEDIA_ITEMS: SocialMediaItemData[] = [
     ),
     to: "/",
   },
-];
+] as const;
 
 export default function SocialMedia(): JSX.Element {
   return (
