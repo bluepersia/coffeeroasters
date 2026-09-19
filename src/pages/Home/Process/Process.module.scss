@@ -1,0 +1,72 @@
+@use "/src/css/variables" as *;
+
+.process {
+  text-align: center;
+}
+
+.inner {
+  padding: var(--space-1000) 0;
+}
+
+.title {
+  color: var(--color-neutral-500);
+  margin-bottom: var(--space-800);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--space-500);
+  margin-bottom: var(--space-500);
+}
+
+.item > * {
+  max-width: 400px;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+@media (min-width: $bp-tablet) {
+  .process {
+    text-align: left;
+  }
+
+  .title {
+    margin-bottom: var(--space-1200);
+  }
+
+  .progressionLine {
+    margin-bottom: var(--space-1200);
+  }
+
+  .list {
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: var(--space-800);
+  }
+
+  .item {
+    flex-basis: 34.2%;
+  }
+
+  .item > * {
+    max-width: 221px;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .inner {
+    padding: var(--space-1800) 0;
+  }
+
+  .item > * {
+    max-width: 285px;
+  }
+}
