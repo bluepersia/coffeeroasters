@@ -1,0 +1,46 @@
+@use "/src/css/variables" as *;
+
+.progressionLine {
+  position: relative;
+  display: none;
+  height: 1px;
+}
+
+.progressionLine::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 68.4%;
+  height: 1px;
+  background-color: var(--color-orange-200);
+}
+
+.circle {
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
+  border-radius: 50%;
+  border: solid 1px var(--color-teal-600);
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.circle2 {
+  left: 34.2%;
+}
+
+.circle3 {
+  left: 68.4%;
+}
+
+.progressionLine--light .circle {
+  background-color: var(--color-neutral-50);
+}
+
+@media (min-width: $bp-tablet) {
+  .progressionLine {
+    display: block;
+  }
+}

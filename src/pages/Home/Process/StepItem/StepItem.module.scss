@@ -1,0 +1,24 @@
+@use "/src/css/variables" as *;
+
+.stepItem {
+  color: var(--color-neutral-900);
+}
+
+.num {
+  color: var(--color-orange-200);
+  margin-bottom: var(--space-300);
+}
+
+.title {
+  margin-bottom: var(--space-300);
+}
+
+@media (min-width: $bp-tablet) {
+  .num {
+    margin-bottom: var(--space-500);
+  }
+
+  .title {
+    margin-bottom: var(--space-500);
+  }
+}
